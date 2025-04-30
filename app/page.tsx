@@ -9,10 +9,16 @@ export default function Home() {
         <div className="max-w-[980px] mx-auto px-5">
           <div className="flex justify-between items-center h-12">
             {/* Logo */}
-            <div className="flex-shrink-0">
-              <div className="text-sm font-medium tracking-tight">
-                f4rmhouse
-              </div>
+            <div className="flex">
+              <Image
+                src="https://f4-public.s3.eu-central-1.amazonaws.com/public/assets/f4rmhouse-logo-official.png"
+                alt="f4rmhouse logo"
+                width={24}
+                height={24}
+                priority
+                className="rounded-full"
+              />
+              <p className="text-sm font-medium tracking-tight pl-2">f4rmhouse</p>
             </div>
 
             {/* Right side navigation items */}
@@ -78,11 +84,11 @@ export default function Home() {
           description="Create sophisticated AI workflows with complete freedom to customize every aspect of your agents' behavior."
         />
         <FeatureSection
-          title="Your computer your choice"
+          title="Private at its core"
           description="Run agents locally for privacy or scale infinitely in the cloud — seamlessly switch between both as your needs evolve."
         />
         <FeatureSection
-          title="Built by the community"
+          title="For the community"
           description="Join a movement of innovators building the future of AI on open standards and collaborative development."
         />
         <footer className="max-w-[980px] mt-20">
