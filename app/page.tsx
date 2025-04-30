@@ -11,7 +11,7 @@ export default function Home() {
             {/* Logo */}
             <div className="flex">
               <Image
-                src="https://f4-public.s3.eu-central-1.amazonaws.com/public/assets/f4rmhouse-logo-official.png"
+                src="https://f4-public.s3.eu-central-1.amazonaws.com/public/assets/f4-logo-white.png"
                 alt="f4rmhouse logo"
                 width={24}
                 height={24}
