@@ -41,8 +41,8 @@ export default function Home() {
             <h1 className="leading-20 text-[48px] text-center md:text-[56px] lg:text-[62px] font-extrabold">
               The all-in-one agent builder.
             </h1>
-            <p className="text-center text-gray/80">
-              Provides every tool you need to create a modern AI wrapper.
+            <p className="text-center text-gray">
+              Provides every tool you need to tinker with modern AI systems, without any guardrails.
             </p>
           </div>
         </div>
