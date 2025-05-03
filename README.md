@@ -12,6 +12,12 @@
   <img alt="GitHub closed pull requests" src="https://img.shields.io/github/issues-pr-closed/f4rmhouse/landing-page"/>
 </p>
 
+This is the repository for the website of the f4rmhouse. It contains:
+* The website
+* The docs
+* The blog
+* The cookbook
+
 ## Quickstart
 
 ## Contributing
