@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://f4-public.s3.eu-central-1.amazonaws.com/public/assets/f4-logo-white.png" alt="f4rmhouse logo" width="96" height="96">
+  <img src="https://f4-public.s3.eu-central-1.amazonaws.com/public/assets/f4-logo-white.png" alt="f4rmhouse logo" width="96" height="96" style="border-radius: 50%;">
 </p>
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
