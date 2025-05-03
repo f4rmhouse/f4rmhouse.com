@@ -6,10 +6,10 @@
 
 <p align="center">
   <a href='http://makeapullrequest.com'><img alt='PRs Welcome' src='https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=shields'/></a>
-  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/posthog/posthog.com"/>
+  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/f4rmhouse/landing-page"/>
   <a href='https://posthog.com/community'><img alt="Join Community" src="https://img.shields.io/badge/community-join-blue"/></a>
-  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/posthog/posthog.com"/>
-  <img alt="GitHub closed pull requests" src="https://img.shields.io/github/issues-pr-closed/posthog/posthog.com"/>
+  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/f4rmhouse/landing-page"/>
+  <img alt="GitHub closed pull requests" src="https://img.shields.io/github/issues-pr-closed/f4rmhouse/landing-page"/>
 </p>
 
 ## Quickstart
