@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { FeatureSection } from "./components/FeatureSection";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -38,10 +39,10 @@ export default function Home() {
       <main className="pt-32">
         <div className="max-w-[980px] mx-auto">
           <div className="">
-            <h1 className="leading-20 text-[48px] text-center md:text-[56px] lg:text-[62px] font-extrabold">
-              The all-in-one agent builder.
+            <h1 className="leading-20 text-[48px] text-center md:text-[62px] lg:text-[62px] font-extrabold">
+              An all-in-one, <Link className="text-[#77a4f5] hover:underline" href="https://www.gnu.org/philosophy/free-sw.html">free/libre</Link>, customizable agent creator.
             </h1>
-            <p className="text-center text-gray">
+            <p className="text-center">
               Provides every tool you need to tinker with modern AI systems, without any guardrails.
             </p>
           </div>
@@ -73,7 +74,7 @@ export default function Home() {
         />
         <FeatureSection
           title="Create once, run anywhere"
-          description="Build once and deploy anywhere with our groundbreaking CORA technology, freeing you from ecosystem lock-in."
+          description="Different agents don't need different GUIs. Unclutter your homescreen by deploying agents seamlessly across WhatsApp, Telegram, Discord, or your secure internal infrastructure with f4rmhouse CORA distribution."
         />
         <FeatureSection
           title="Massive marketplace for agent tools."
@@ -91,6 +92,17 @@ export default function Home() {
           title="For the community"
           description="Join a movement of innovators building the future of AI on open standards and collaborative development."
         />
+        <div className="max-w-full h-[75vh] mx-auto mt-24 bg-purple-700">
+          <h1 className="text-[48px] text-center bg-purple-900 font-extrabold">What users love:</h1>
+          <div className="grid grid-cols-2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
         <footer className="max-w-[980px] mt-20">
           <div>
             <div>
