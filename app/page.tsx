@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { FeatureSection } from "./components/FeatureSection";
 import Link from "next/link";
+import FeaturesGridItem from "./components/FeaturesGridItem";
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
         <div className="max-w-[980px] mx-auto px-5">
           <div className="flex justify-between items-center h-12">
             {/* Logo */}
-            <div className="flex">
+            <Link href="/" className="flex items-center">
               <Image
                 src="https://f4-public.s3.eu-central-1.amazonaws.com/public/assets/f4-logo-white.png"
                 alt="f4rmhouse logo"
@@ -20,11 +21,17 @@ export default function Home() {
                 className="rounded-full"
               />
               <p className="text-sm font-medium tracking-tight pl-2">f4rmhouse</p>
-            </div>
+            </Link>
 
             {/* Right side navigation items */}
             <div className="flex items-center gap-4">
               <ThemeToggle />
+              <Link
+                href="/docs"
+                className="text-sm hover:brightness-110 transition-all mr-4"
+              >
+                Docs
+              </Link>
               <a
                 href="https://app.f4rmhouse.com"
                 className="text-sm text-accent hover:brightness-110 transition-all"
@@ -39,11 +46,11 @@ export default function Home() {
       <main className="pt-32">
         <div className="max-w-[980px] mx-auto">
           <div className="">
-            <h1 className="leading-20 text-[48px] text-center md:text-[62px] lg:text-[62px] font-extrabold">
+            <h1 className="leading-20 text-[48px] text-center md:text-[62px] lg:text-[62px] mb-5">
               An all-in-one, <Link className="text-[#77a4f5] hover:underline" href="https://www.gnu.org/philosophy/free-sw.html">free/libre</Link>, customizable agent creator.
             </h1>
             <p className="text-center">
-              Provides every tool you need to tinker with modern AI systems, without any guardrails.
+              Provides every tool you need to tinker with, create and distribute modern agentic systems.
             </p>
           </div>
         </div>
@@ -67,6 +74,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <FeatureSection
+          title="Your window into the agentic web"
+          description="Intelligent automation that adapts to your needs, making complex tasks effortless."
+          backgroundColor="bg-[#f8d65b]"
+        />
         <FeatureSection
           title="Automation at it's finest."
           description="Intelligent automation that adapts to your needs, making complex tasks effortless."
@@ -92,17 +104,6 @@ export default function Home() {
           title="For the community"
           description="Join a movement of innovators building the future of AI on open standards and collaborative development."
         />
-        <div className="max-w-full h-[75vh] mx-auto mt-24 bg-purple-700">
-          <h1 className="text-[48px] text-center bg-purple-900 font-extrabold">What users love:</h1>
-          <div className="grid grid-cols-2">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
         <footer className="max-w-[980px] mt-20">
           <div>
             <div>
