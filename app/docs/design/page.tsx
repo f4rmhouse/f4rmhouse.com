@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ThemeToggle } from "../../components/ThemeToggle";
+import DocsSidebar from "../../components/DocsSidebar";
+import CodeBlock from "../../components/CodeBlock";
 
 
 export default function Home() {
@@ -42,11 +44,20 @@ export default function Home() {
         </div>
       </nav>
 
-      <main className="pt-32">
-        <div className="max-w-[980px] mx-auto">
-            <h1>Customizing design</h1>
-        </div>
-      </main>
+      <div className="flex pt-12">
+        {/* Sidebar Navigation */}
+        <DocsSidebar currentPage="design" />
+
+        {/* Main Content */}
+        <main className="flex-1 ml-64 p-8 pt-20">
+          <div className="max-w-3xl mx-auto">
+            
+            <div className="mb-12">
+              <h1 className="text-3xl font-bold mb-4" id="overview">Customizing Design</h1>
+            </div>
+          </div>
+        </main>
+      </div>
     </div>
   );
 }
