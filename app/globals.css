@@ -58,4 +58,23 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+  
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

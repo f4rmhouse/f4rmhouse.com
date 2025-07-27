@@ -69,18 +69,18 @@ export default function DistributionPage() {
                 <h3 className="text-lg font-semibold mb-2">Public Link Sharing</h3>
                 <p className="mb-4">Generate a public link that anyone can use to access your agent:</p>
                 <ol className="list-decimal pl-6 space-y-2">
-                  <li>Open your agent in the f4rmhouse dashboard</li>
-                  <li>Click the "Share" button in the top-right corner</li>
-                  <li>Toggle "Public Access" to enable link sharing</li>
+                  <li>Open your f4rmhouse dashboard</li>
+                  <li>Open the "details" sidebar by moving your cursor all the way to the right of the screen or by pressing cmd/ctrl + M</li>
+                  <li>Click on "Generate link"</li>
                   <li>Copy the generated link to share with others</li>
                 </ol>
               </div>
               
               <div className="mb-6">
-                <h3 className="text-lg font-semibold mb-2">Team Sharing</h3>
+                <h3 className="text-lg font-semibold mb-2">Team Sharing (Experimental)</h3>
                 <p className="mb-4">Share agents with specific team members or groups:</p>
                 <ol className="list-decimal pl-6 space-y-2">
-                  <li>Open your agent in the f4rmhouse dashboard</li>
+                  <li>Open your f4rmhouse dashboard</li>
                   <li>Click the "Share" button in the top-right corner</li>
                   <li>Select "Team Sharing" tab</li>
                   <li>Enter email addresses of team members or select groups</li>
@@ -155,7 +155,7 @@ f4rmhouse.connect("telegram", telegramConfig);`}</CodeBlock>
               <p className="mb-4">Manage who can access your distributed agents:</p>
               
               <div className="mb-6">
-                <h3 className="text-lg font-semibold mb-2">Access Restrictions</h3>
+                <h3 className="text-lg font-semibold mb-2">Access Restrictions (Coming soon)</h3>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Domain restrictions - limit access to specific domains</li>
                   <li>IP restrictions - limit access to specific IP addresses or ranges</li>
@@ -165,7 +165,7 @@ f4rmhouse.connect("telegram", telegramConfig);`}</CodeBlock>
               </div>
               
               <div className="mb-6">
-                <h3 className="text-lg font-semibold mb-2">Monitoring Usage</h3>
+                <h3 className="text-lg font-semibold mb-2">Monitoring Usage (Coming soon)</h3>
                 <p className="mb-4">Track how your agents are being used:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Usage analytics dashboard</li>

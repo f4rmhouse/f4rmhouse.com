@@ -10,8 +10,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "f4rmhouse - the open agent hub",
-  description: "Build, edit and share AI agents with ease.",
+  title: "f4rmhouse - the browser-native MCP client",
+  description: "Use MCP servers to multiply the power of any LLM you want!",
 };
 
 export default function RootLayout({

@@ -2,7 +2,6 @@ import Image from "next/image";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { FeatureSection } from "./components/FeatureSection";
 import Link from "next/link";
-import FeaturesGridItem from "./components/FeaturesGridItem";
 
 export default function Home() {
   return (
@@ -43,27 +42,22 @@ export default function Home() {
         </div>
       </nav>
 
-      <main className="pt-32">
+      <main className="pt-[15%]">
         <div className="max-w-[980px] mx-auto">
           <div className="">
-            <h1 className="leading-20 text-[48px] text-center md:text-[62px] lg:text-[62px] mb-5">
-              An all-in-one, <Link className="text-[#77a4f5] hover:underline" href="https://www.gnu.org/philosophy/free-sw.html">free/libre</Link>, customizable agent creator.
+            <h1 className="text-center leading-8 text-[48px] md:text-[62px] lg:text-[62px] mb-10">
+              The Browser-Native MCP Client
             </h1>
-            <p className="text-center">
-              Provides every tool you need to tinker with, create and distribute modern agentic systems.
-            </p>
+            <p className="text-base text-center">Use MCPs to multiply the power of any LLM you want!</p>
           </div>
         </div>
-        <div className="max-w-[980px] mx-auto mt-12 flex justify-center gap-4">
+        <div className="max-w-[980px] mx-auto mt-5 flex justify-center gap-4">
           <a
             href="https://app.f4rmhouse.com"
             className="p-2 font-bold hover:bg-blue-400 transition-all text-white cursor-pointer rounded-md pl-5 pr-5 text-foreground bg-[#0582ff]"
           >
             Get started — free
           </a>
-          <button className="p-2 font-bold hover:bg-blue-200 bg-blue-100 transition-all cursor-pointer rounded-md pl-5 pr-5 text-blue-500">
-            Talk to a human
-          </button>
         </div>
         <div>
           <div className="mt-15">
@@ -75,35 +69,27 @@ export default function Home() {
           </div>
         </div>
         <FeatureSection
-          title="Your window into the agentic web"
-          description="Intelligent automation that adapts to your needs, making complex tasks effortless."
+          title="Delightfully capable. Surprisingly simple."
+          description=""
           backgroundColor="bg-[#f8d65b]"
         />
         <FeatureSection
-          title="Automation at it's finest."
-          description="Intelligent automation that adapts to your needs, making complex tasks effortless."
+          title="Servers you love. From a place you can trust."
+          description=""
           backgroundColor="bg-[#f8d65b]"
         />
         <FeatureSection
-          title="Create once, run anywhere"
-          description="Different agents don't need different GUIs. Unclutter your homescreen by deploying agents seamlessly across WhatsApp, Telegram, Discord, or your secure internal infrastructure with f4rmhouse CORA distribution."
+          title="Putting the flash in gemini-flash-2.5-v1-beta-6.0.1-public"
+          description=""
+          backgroundColor="bg-[#f8d65b]"
         />
         <FeatureSection
-          title="Massive marketplace for agent tools."
-          description="Transform hours of setup into seconds with our curated marketplace of instantly-integrable AI tools and models."
+          title="DIY = Design it yourself"
+          description=""
+          backgroundColor="bg-[#f8d65b]"
         />
-        <FeatureSection
-          title="Infinitely customizable"
-          description="Create sophisticated AI workflows with complete freedom to customize every aspect of your agents' behavior."
-        />
-        <FeatureSection
-          title="Private at its core"
-          description="Run agents locally for privacy or scale infinitely in the cloud — seamlessly switch between both as your needs evolve."
-        />
-        <FeatureSection
-          title="For the community"
-          description="Join a movement of innovators building the future of AI on open standards and collaborative development."
-        />
+        <h1 className="text-center text-6xl mt-[200px]">"Just make a f4rmer do it"</h1>
+        <p className="text-center text-2xl mt-5">20 000 MCPs are available for any use case you can imagine, and many more that you can't.</p>
         <footer className="max-w-[980px] mt-20">
           <div>
             <div>
