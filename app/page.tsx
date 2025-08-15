@@ -25,12 +25,6 @@ export default function Home() {
             {/* Right side navigation items */}
             <div className="flex items-center gap-4">
               <ThemeToggle />
-              <Link
-                href="/docs"
-                className="text-sm hover:brightness-110 transition-all mr-4"
-              >
-                Docs
-              </Link>
               <a
                 href="https://app.f4rmhouse.com"
                 className="text-sm text-accent hover:brightness-110 transition-all"
@@ -46,7 +40,7 @@ export default function Home() {
         <div className="max-w-[980px] mx-auto">
           <div className="">
             <h1 className="text-center leading-18 text-[48px] md:text-[52px] lg:text-[72px] mb-8">
-              Hi 👋 <br />I'm your unfair advantage.
+              Hi 👋 <br />I&apos;m your unfair advantage.
             </h1>
             <p className="text-center text-2xl text-neutral-400">A thinking partner, grounded in the tools and apps you use every day.</p>
           </div>
@@ -104,8 +98,8 @@ export default function Home() {
           backgroundColor="bg-[#f8d65b]"
           videoSrc="/theme_demo.mov"
         />
-        <h1 className="text-center text-6xl mt-[200px]">"Just make a f4rmer do it"</h1>
-        <p className="text-center text-2xl mt-5">MCPs are available for any use case you can imagine, and many more that you can't.</p>
+        <h1 className="text-center text-6xl mt-[200px]">&ldquo;Just make a f4rmer do it&rdquo;</h1>
+        <p className="text-center text-2xl mt-5">MCPs are available for any use case you can imagine, and many more that you can&apos;t.</p>
         <footer className="max-w-[980px] mt-20">
           <div>
             <div>

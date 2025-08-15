@@ -2,7 +2,6 @@
 
 interface FeatureSectionProps {
   title: string;
-  subtitle?: string;
   description: string;
   backgroundColor?: string;
   maxWidth?: string;
@@ -11,7 +10,6 @@ interface FeatureSectionProps {
 
 export function FeatureSection({
   title,
-  subtitle,
   description,
   backgroundColor = "bg-radial from-neutral-300 to-neutral-400",
   videoSrc,
