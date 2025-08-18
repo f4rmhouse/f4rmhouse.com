@@ -40,7 +40,7 @@ export default function Home() {
         <div className="max-w-[980px] mx-auto">
           <div className="">
             <h1 className="text-center leading-18 text-[48px] md:text-[52px] lg:text-[72px] mb-8">
-              Hi 👋 <br />I&apos;m your unfair advantage.
+              A browser-native MCP client
             </h1>
             <p className="text-center text-2xl text-neutral-400">A thinking partner, grounded in the tools and apps you use every day.</p>
           </div>
@@ -100,13 +100,6 @@ export default function Home() {
         />
         <h1 className="text-center text-6xl mt-[200px]">&ldquo;Just make a f4rmer do it&rdquo;</h1>
         <p className="text-center text-2xl mt-5">MCPs are available for any use case you can imagine, and many more that you can&apos;t.</p>
-        <footer className="max-w-[980px] mt-20">
-          <div>
-            <div>
-              <h1>Integrations</h1>
-            </div>
-          </div>
-        </footer>
       </main>
     </div>
   );
