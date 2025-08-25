@@ -11,20 +11,18 @@ interface FeatureSectionProps {
 export function FeatureSection({
   title,
   description,
-  backgroundColor = "bg-radial from-neutral-300 to-neutral-400",
   videoSrc,
 }: FeatureSectionProps) {
   return (
-    <div className={`max-w-[1080px] mx-auto mt-[30vh]`}>
-      <h1 className="mt-15 text-6xl w-[65%]">{title}</h1>
-      <p className="mt-5 mb-5 w-[65%] text-neutral-300 text-xl">{description}</p>
-      <div className={`rounded-lg mx-auto ${backgroundColor} relative overflow-hidden`}>
-        <div className="p-6">
+    <div className={`max-w-[1080px] bg-white m-10 rounded-md text-black shadow rounded-lg p-5`}>
+      <h1 className="text-2xl">{title}</h1>
+      <p className="text-base">{description}</p>
+      <div className={`rounded-lg relative overflow-hidden`}>
+        <div className="pt-6 pb-2">
           {videoSrc ? (
             <video 
               controls
               muted
-              loop
               width="" 
               height=""
               className="rounded-lg object-cover shadow-lg"
