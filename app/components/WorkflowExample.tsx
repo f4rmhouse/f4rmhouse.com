@@ -1,5 +1,7 @@
 "use client";
 
+import { LazyImage } from "./LazyImage";
+
 interface FeatureSectionProps {
   description: string;
   backgroundColor?: string;
@@ -18,11 +20,9 @@ export function WorkflowExample({
   return (
     <div className="bg-white rounded-md">
     {img?
-        <img 
+        <LazyImage 
         src={img}
-        alt="Fetch remote data demo"
-        width="100%" 
-        height="100%"
+        alt={description}
         className="rounded-t-md object-cover shadow-lg"
         /> 
     : null}

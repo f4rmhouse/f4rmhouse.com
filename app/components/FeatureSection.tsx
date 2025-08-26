@@ -1,5 +1,7 @@
 "use client";
 
+import { LazyVideo } from "./LazyVideo";
+
 interface FeatureSectionProps {
   title: string;
   description: string;
@@ -20,16 +22,14 @@ export function FeatureSection({
       <div className={`rounded-lg relative overflow-hidden`}>
         <div className="pt-6 pb-2">
           {videoSrc ? (
-            <video 
-              controls
-              muted
-              width="" 
-              height=""
-              className="rounded-lg object-cover shadow-lg"
-            >
-              <source src={videoSrc} type="video/quicktime" />
-              Your browser does not support the video tag.
-            </video>
+            <LazyVideo
+              src={videoSrc}
+              alt={title}
+              className="rounded-lg object-cover shadow-lg w-full"
+              controls={true}
+              muted={true}
+              autoPlay={false}
+            />
           ) : (
             <div className=""></div>
           )}
