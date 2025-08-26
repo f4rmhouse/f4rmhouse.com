@@ -1,21 +1,24 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 interface LazyImageProps {
   src: string;
   alt: string;
   className?: string;
-  width?: string | number;
-  height?: string | number;
+  width?: number;
+  height?: number;
+  fill?: boolean;
 }
 
 export function LazyImage({
   src,
   alt,
   className = "",
-  width = "100%",
-  height = "100%",
+  width = 800,
+  height = 600,
+  fill = false,
 }: LazyImageProps) {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -27,14 +30,16 @@ export function LazyImage({
         </div>
       )}
       
-      <img
+      <Image
         src={src}
         alt={alt}
-        width={width}
-        height={height}
+        width={fill ? undefined : width}
+        height={fill ? undefined : height}
+        fill={fill}
         className={`${className} ${!isLoaded ? 'opacity-0 absolute inset-0' : 'opacity-100'} transition-opacity duration-300`}
         onLoad={() => setIsLoaded(true)}
         loading="lazy"
+        unoptimized={src.endsWith('.gif')}
       />
     </div>
   );

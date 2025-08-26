@@ -4,7 +4,6 @@ import { useState } from "react";
 
 interface LazyVideoProps {
   src: string;
-  alt: string;
   className?: string;
   poster?: string;
   autoPlay?: boolean;
@@ -15,7 +14,6 @@ interface LazyVideoProps {
 
 export function LazyVideo({
   src,
-  alt,
   className = "",
   poster,
   autoPlay = false,

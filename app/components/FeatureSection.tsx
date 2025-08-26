@@ -24,7 +24,6 @@ export function FeatureSection({
           {videoSrc ? (
             <LazyVideo
               src={videoSrc}
-              alt={title}
               className="rounded-lg object-cover shadow-lg w-full"
               controls={true}
               muted={true}

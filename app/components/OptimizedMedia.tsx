@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 interface OptimizedMediaProps {
   src: string;
@@ -112,13 +113,16 @@ export function OptimizedMedia({
         </div>
       )}
       
-      <img
+      <Image
         ref={mediaRef as React.RefObject<HTMLImageElement>}
-        src={isInView ? src : undefined}
+        src={isInView ? src : ''}
         alt={alt}
+        width={800}
+        height={600}
         className={`${className} ${!isLoaded ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300`}
         onLoad={() => setIsLoaded(true)}
         style={{ display: isLoaded ? 'block' : 'none' }}
+        unoptimized={src.endsWith('.gif')}
       />
     </div>
   );

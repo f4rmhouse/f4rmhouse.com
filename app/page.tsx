@@ -64,6 +64,7 @@ export default function Home() {
                 src="/fetch_remote_data.gif"
                 alt="Fetch remote data demo"
                 className="rounded-lg object-cover shadow-lg"
+                fill={true}
               />
               </div>
             </div>
