@@ -2,7 +2,6 @@ import Image from "next/image";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { FeatureSection } from "./components/FeatureSection";
 import { WorkflowExample } from "./components/WorkflowExample";
-import { LazyImage } from "./components/LazyImage";
 import Link from "next/link";
 
 export default function Home() {
@@ -60,11 +59,12 @@ export default function Home() {
             <div className="rounded-lg max-w-[980px] h-[75vh] mx-auto bg-radial from-blue-300 to-blue-400 relative overflow-hidden">
               <div className="absolute"></div>
               <div className="p-6">
-              <LazyImage 
+              <img 
                 src="/fetch_remote_data.gif"
                 alt="Fetch remote data demo"
+                width="100%" 
+                height="100%"
                 className="rounded-lg object-cover shadow-lg"
-                fill={true}
               />
               </div>
             </div>
