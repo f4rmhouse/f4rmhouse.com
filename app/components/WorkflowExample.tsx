@@ -1,6 +1,6 @@
 "use client";
 
-import { LazyImage } from "./LazyImage";
+import { LazyGif } from "./LazyGif";
 
 interface FeatureSectionProps {
   description: string;
@@ -20,7 +20,7 @@ export function WorkflowExample({
   return (
     <div className="bg-white rounded-md">
     {img?
-        <LazyImage 
+        <LazyGif 
         src={img}
         alt={description}
         className="rounded-t-md object-cover shadow-lg"

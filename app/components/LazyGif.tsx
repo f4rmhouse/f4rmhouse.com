@@ -2,44 +2,38 @@
 
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 
-interface LazyVideoProps {
+interface LazyGifProps {
   src: string;
+  alt: string;
   className?: string;
-  controls?: boolean;
-  muted?: boolean;
   width?: string;
   height?: string;
 }
 
-export function LazyVideo({
+export function LazyGif({
   src,
+  alt,
   className = "",
-  controls = true,
-  muted = true,
-  width = "",
-  height = "",
-}: LazyVideoProps) {
+  width = "100%",
+  height = "100%",
+}: LazyGifProps) {
   const [ref, isIntersecting] = useIntersectionObserver();
 
   return (
     <div ref={ref} className={`relative ${className}`}>
       {!isIntersecting ? (
         <div className="bg-gray-200 animate-pulse rounded-lg flex items-center justify-center min-h-[200px]">
-          <div className="text-gray-400">Loading video...</div>
+          <div className="text-gray-400">Loading...</div>
         </div>
       ) : (
-        <video
-          controls={controls}
-          muted={muted}
+        <img
+          src={src}
+          alt={alt}
           width={width}
           height={height}
           className={className}
-          preload="metadata"
-        >
-          <source src={src} type="video/quicktime" />
-          <source src={src} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+          loading="lazy"
+        />
       )}
     </div>
   );
