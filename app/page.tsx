@@ -120,10 +120,10 @@ export default function Home() {
             savings="$500 - $1000"
           />
           <WorkflowExample
-            description="Create visualizations and other deliverables that you can share with your teams."
-            img="/ad_example_tt.gif"
-            costComparison="Statistician, data scientists"
-            savings="$50 - $100"
+            description="Share your agents with you friends and colleagues and let them skip the menial setups."
+            img="/share_example.gif"
+            costComparison="Setup, maintenance, updates"
+            savings="$0"
           />
         </div>
       </main>
