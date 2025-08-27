@@ -1,6 +1,6 @@
 "use client";
 
-import { LazyVideo } from "./LazyVideo";
+// import { LazyVideo } from "./LazyVideo";
 
 interface FeatureSectionProps {
   title: string;
@@ -13,7 +13,7 @@ interface FeatureSectionProps {
 
 export function FeatureSection({
   title,
-  videoSrc,
+  // videoSrc,
   icon,
 }: FeatureSectionProps) {
   return (
@@ -24,16 +24,7 @@ export function FeatureSection({
       </div>
       <div className={`rounded-lg relative overflow-hidden`}>
         <div className="pt-6 pb-2">
-          {videoSrc ? (
-            <LazyVideo
-              src={videoSrc}
-              className="rounded-lg object-cover shadow-lg"
-              controls={true}
-              muted={true}
-            />
-          ) : (
-            <div className=""></div>
-          )}
+
         </div>
       </div>
     </div>

@@ -73,7 +73,31 @@ export default function Home() {
           <div className="col-span-1">
             <h1 className="text-center text-6xl mt-[40px] font-bold">Our features</h1>
           </div>
-        </div> 
+          <FeatureSection
+            title="Safe authentication and authorization using MCP standards."
+            description=""
+            videoSrc="/example_workflow.mov"
+            icon={<Lock size={32} className=""/>} 
+          />
+          <FeatureSection
+            title="Easy MCP integration into whatever LLM you prefer."
+            description=""
+            videoSrc="/store_demo.mov"
+            icon={<Package size={32} className=""/>}
+          />
+          <FeatureSection
+            title="Fast generation using LLMs hosted on ASIC chips."
+            description=""
+            videoSrc="/speed_demo.mov"
+            icon={<Zap size={32} className=""/>}
+          />
+          <FeatureSection
+            title="Customize the UI to match your brand and your mood."
+            description=""
+            videoSrc="/theme_demo.mov"
+            icon={<Palette size={32} className=""/>}
+          />
+        </div>
         <div className="">
           <h1 className="text-center text-6xl mt-[200px] font-bold w-[60vw] mx-auto">We value your privacy and do not store any personal data or chat histories.</h1>
           <p className="text-center text-2xl text-neutral-400 mt-5">You can keep full control of your entire AI stack by running f4rmhouse on your own infrastructure.</p>
