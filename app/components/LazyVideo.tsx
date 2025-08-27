@@ -13,34 +13,27 @@ interface LazyVideoProps {
 
 export function LazyVideo({
   src,
-  className = "",
+  className = "rounded-full",
   controls = true,
   muted = true,
   width = "",
   height = "",
 }: LazyVideoProps) {
-  const [ref, isIntersecting] = useIntersectionObserver();
 
   return (
-    <div ref={ref} className={`relative ${className}`}>
-      {!isIntersecting ? (
-        <div className="bg-gray-200 animate-pulse rounded-lg flex items-center justify-center min-h-[200px]">
-          <div className="text-gray-400">Loading video...</div>
-        </div>
-      ) : (
-        <video
-          controls={controls}
-          muted={muted}
-          width={width}
-          height={height}
-          className={className}
-          preload="metadata"
-        >
-          <source src={src} type="video/quicktime" />
-          <source src={src} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      )}
+    <div className={`relative ${className}`}>
+      <video
+        controls={controls}
+        muted={muted}
+        width={width}
+        height={height}
+        className={className}
+        preload="metadata"
+      >
+        <source src={src} type="video/quicktime" />
+        <source src={src} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
   );
 }

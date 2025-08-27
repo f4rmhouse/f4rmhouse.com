@@ -4,6 +4,7 @@ import { FeatureSection } from "./components/FeatureSection";
 import { WorkflowExample } from "./components/WorkflowExample";
 import { LazyGif } from "./components/LazyGif";
 import Link from "next/link";
+import { BotMessageSquare, FileCode2, FileImage, Lock, Package, Palette, Zap } from "lucide-react";
 
 export default function Home() {
   return (
@@ -69,63 +70,83 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-[20vh] grid grid-cols-2 w-[70vw] mx-auto gap-0 bg-gradient-to-b from-blue-300 to-blue-400 rounded-md">
-          <div className="col-span-2">
+        <div className="mt-[20vh] grid grid-cols-1 w-[70vw] mx-auto gap-0 rounded-md">
+          <div className="col-span-1">
             <h1 className="text-center text-6xl mt-[40px] font-bold">Our features</h1>
-            <p className="text-center text-2xl">A general purpose, non-technical and easy to use MCP client.</p>
           </div>
           <FeatureSection
             title="Safe authentication and authorization using MCP standards."
             description=""
-            backgroundColor="bg-[#f8d65b]"
             videoSrc="/example_workflow.mov"
+            icon={<Lock size={32} className=""/>} 
           />
           <FeatureSection
             title="Easy MCP integration into whatever LLM you prefer."
             description=""
-            backgroundColor="bg-[#f8d65b]"
             videoSrc="/store_demo.mov"
+            icon={<Package size={32} className=""/>}
           />
           <FeatureSection
             title="Fast generation using LLMs hosted on ASIC chips."
             description=""
-            backgroundColor="bg-[#f8d65b]"
             videoSrc="/speed_demo.mov"
+            icon={<Zap size={32} className=""/>}
           />
           <FeatureSection
             title="Customize the UI to match your brand and your mood."
             description=""
-            backgroundColor="bg-[#f8d65b]"
             videoSrc="/theme_demo.mov"
+            icon={<Palette size={32} className=""/>}
           />
         </div>
-        <h1 className="text-center text-6xl mt-[200px] font-bold w-[60vw] mx-auto">This lets you make automations that save you thousand.</h1>
+        <div className="">
+          <h1 className="text-center text-6xl mt-[200px] font-bold w-[60vw] mx-auto">We value your privacy and do not store any personal data or chat histories.</h1>
+          <p className="text-center text-2xl text-neutral-400 mt-5">You can keep full control of your entire AI stack by running f4rmhouse on your own infrastructure.</p>
+          <img className="mx-auto mt-10" height={128} width={128} src="https://cdn-icons-png.flaticon.com/512/2111/2111540.png"/>
+        </div>
         <div className="mt-[10px] mb-[200px] grid grid-cols-1 w-[40vw] mx-auto gap-5">
-          <WorkflowExample
-            description="Create professional ads that capture attention"
-            img="/ad_example_tt.gif"
-            costComparison="Copywriters, marketing photographers, models"
-            savings="$500 - $1000"
-          />
-          <WorkflowExample
-            description="Analyze and create legal documents."
-            img="/legal_example.gif"
-            costComparison="Paralegal, lawyers"
-            savings="$1000 - $5000"
-          />
-          <WorkflowExample
-            description="Collect and analyze business data to get unprecedented insights."
-            img="/fetch_remote_data.gif"
-            costComparison="Consultants, data scientists, accountants"
-            savings="$500 - $1000"
-          />
-          <WorkflowExample
-            description="Share your agents with you friends and colleagues and let them skip the menial setups."
-            img="/share_example.gif"
-            costComparison="Setup, maintenance, updates"
-            savings="$0"
-          />
         </div>
+        <div className="w-full">
+          <h1 className="text-center text-6xl mt-[200px] font-bold w-[60vw] mx-auto">How people use f4rmhouse</h1>
+          <div className="grid grid-cols-3 w-[80vw] mx-auto gap-5 mt-20">
+            <div>
+              <FileImage size={32} className="mb-5 text-blue-400"/>
+              <p className="text-2xl">Media generation</p>
+              <p className="mt-5 text-xl">
+                Create a custom f4rmer with an image gen MCP to translate your sketches into photoreal visuals, render your favorite artist’s style on any subject, and iterate variations that sharpen your creative direction.
+              </p>
+            </div>
+            <div>
+              <FileCode2 size={32} className="mb-5 text-blue-400"/>
+              <p className="text-2xl">Document generation</p>
+              <p className="mt-5 text-xl">
+                Use Google Docs MCP to convert bullet points into polished reports, apply your house style to any draft, and spin instant variations that nail the right tone formal, playful, or investor grade every time.
+              </p>
+            </div>
+            <div>
+              <BotMessageSquare size={32} className="mb-5 text-blue-400"/>
+              <p className="text-2xl">Share f4rmers</p>
+              <p className="mt-5 text-xl">
+              Share f4rmers with its custom tools, memory, and voice. Generate a single link. Anyone who clicks it receives an identical, ready-to-run clone in their own workspace. They'll inherit any guardrail you set, so your expertise spreads at the speed of a share.
+              </p>
+            </div>
+            <div>
+              <p className="italic mt-10 text-xl">Learn faster and deeper.</p>
+            </div>
+            <div>
+              <p className="italic mt-10 text-xl">Present with confidence.</p>
+            </div>
+            <div>
+              <p className="italic mt-10 text-xl">Share intelligence.</p>
+            </div>
+          </div>
+          <div className="w-full">
+            <h1 className="text-center text-6xl mt-[200px] font-bold w-[60vw] mx-auto">"Just let a f4rmer do it."</h1>
+          </div>
+        </div>
+        <footer className="w-full mt-[200px]">
+          <h1 className="m-10">f4rmhouse © 2025</h1>
+        </footer>
       </main>
     </div>
   );
