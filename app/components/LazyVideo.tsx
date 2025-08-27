@@ -1,7 +1,5 @@
 "use client";
 
-import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
-
 interface LazyVideoProps {
   src: string;
   className?: string;

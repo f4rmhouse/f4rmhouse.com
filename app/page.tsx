@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { FeatureSection } from "./components/FeatureSection";
-import { WorkflowExample } from "./components/WorkflowExample";
 import { LazyGif } from "./components/LazyGif";
 import Link from "next/link";
 import { BotMessageSquare, FileCode2, FileImage, Lock, Package, Palette, Zap } from "lucide-react";
@@ -127,7 +126,7 @@ export default function Home() {
               <BotMessageSquare size={32} className="mb-5 text-blue-400"/>
               <p className="text-2xl">Share f4rmers</p>
               <p className="mt-5 text-xl">
-              Share f4rmers with its custom tools, memory, and voice. Generate a single link. Anyone who clicks it receives an identical, ready-to-run clone in their own workspace. They'll inherit any guardrail you set, so your expertise spreads at the speed of a share.
+              Share f4rmers with its custom tools, memory, and voice. Generate a single link. Anyone who clicks it receives an identical, ready-to-run clone in their own workspace. They&apos;ll inherit any guardrail you set, so your expertise spreads at the speed of a share.
               </p>
             </div>
             <div>
@@ -141,7 +140,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full">
-            <h1 className="text-center text-6xl mt-[200px] font-bold w-[60vw] mx-auto">"Just let a f4rmer do it."</h1>
+            <h1 className="text-center text-6xl mt-[200px] font-bold w-[60vw] mx-auto">&ldquo;Just let a f4rmer do it.&rdquo;</h1>
           </div>
         </div>
         <footer className="w-full mt-[200px]">

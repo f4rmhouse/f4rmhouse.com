@@ -1,7 +1,6 @@
 "use client";
 
 import { LazyVideo } from "./LazyVideo";
-import { Lock } from "lucide-react";
 
 interface FeatureSectionProps {
   title: string;
@@ -14,7 +13,6 @@ interface FeatureSectionProps {
 
 export function FeatureSection({
   title,
-  description,
   videoSrc,
   icon,
 }: FeatureSectionProps) {
