@@ -95,7 +95,7 @@ export default function Home() {
             title="Expressive"
             description="Customize the UI to match your brand and your mood."
             videoSrc="/theme_demo.mov"
-            imageUrl="          https://f4-public.s3.eu-central-1.amazonaws.com/artifacts/5de5189a-4fce-489d-a8a0-4c3faf76a774.jpg"
+            imageUrl="https://f4-public.s3.eu-central-1.amazonaws.com/artifacts/5de5189a-4fce-489d-a8a0-4c3faf76a774.jpg"
           />
           <FeatureSection
             title="Social"
@@ -141,13 +141,13 @@ export default function Home() {
               Share f4rmers with its custom tools, memory, and voice. Generate a single link. Anyone who clicks it receives an identical, ready-to-run clone in their own workspace. They&apos;ll inherit any guardrail you set, so your expertise spreads at the speed of a share.
               </p>
             </div>
-            <div>
+            <div className="hidden sm:block">
               <p className="italic mt-10 text-xl">Learn faster and deeper.</p>
             </div>
-            <div>
+            <div className="hidden sm:block">
               <p className="italic mt-10 text-xl">Present with confidence.</p>
             </div>
-            <div>
+            <div className="hidden sm:block">
               <p className="italic mt-10 text-xl">Share intelligence.</p>
             </div>
           </div>
