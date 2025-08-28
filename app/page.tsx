@@ -57,7 +57,7 @@ export default function Home() {
         </div>
         <div>
           <div className="mt-15">
-            <div className="rounded-lg max-w-[980px] h-[75vh] mx-auto bg-radial from-blue-300 to-blue-400 relative overflow-hidden">
+            <div className="rounded-lg max-w-[980px] h-[75vh] mx-auto relative overflow-hidden">
               <div className="absolute"></div>
               <div className="p-6">
               <LazyGif 
@@ -72,7 +72,7 @@ export default function Home() {
         <div className="col-span-1 mt-[20vh]">
             <h1 className="text-center text-6xl mt-[40px] font-bold">Our features</h1>
           </div>
-        <div className="mt-5 grid grid-cols-3 w-[70vw] mx-auto gap-0 rounded-md">
+        <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[70vw] mx-auto gap-0 rounded-md">
           <FeatureSection
             title="Safe"
             description="f4rmhouse keeps your data private and secure."
@@ -111,15 +111,15 @@ export default function Home() {
           />
         </div>
         <div className="">
-          <h1 className="text-center text-6xl mt-[200px] font-bold w-[60vw] mx-auto">We value your privacy and do not store any personal data or chat histories.</h1>
+          <h1 className="text-center text-4xl sm:text-6xl mt-[200px] font-bold sm:w-[60vw] mx-auto">We value your privacy and do not store any personal data or chat histories.</h1>
           <p className="text-center text-2xl text-neutral-400 mt-5">You can keep full control of your entire AI stack by running f4rmhouse on your own infrastructure.</p>
           <img className="mx-auto mt-10" height={128} width={128} src="https://cdn-icons-png.flaticon.com/512/2111/2111540.png"/>
         </div>
         <div className="mt-[10px] mb-[200px] grid grid-cols-1 w-[40vw] mx-auto gap-5">
         </div>
         <div className="w-full">
-          <h1 className="text-center text-6xl mt-[200px] font-bold w-[60vw] mx-auto">How people use f4rmhouse</h1>
-          <div className="grid grid-cols-3 w-[80vw] mx-auto gap-5 mt-20">
+          <h1 className="text-center text-4xl sm:text-6xl mt-[200px] font-bold sm:w-[60vw] mx-auto">How people use f4rmhouse</h1>
+          <div className="grid grid-cols-1 sm:grid-cols-3 w-[80vw] mx-auto gap-5 mt-20">
             <div>
               <FileImage size={32} className="mb-5 text-blue-400"/>
               <p className="text-2xl">Media generation</p>
