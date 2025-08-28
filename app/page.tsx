@@ -69,33 +69,45 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-[20vh] grid grid-cols-1 w-[70vw] mx-auto gap-0 rounded-md">
-          <div className="col-span-1">
+        <div className="col-span-1">
             <h1 className="text-center text-6xl mt-[40px] font-bold">Our features</h1>
           </div>
+        <div className="mt-[20vh] grid grid-cols-3 w-[70vw] mx-auto gap-0 rounded-md">
           <FeatureSection
-            title="Safe authentication and authorization using MCP standards."
-            description=""
+            title="Safe"
+            description="Authentication and authorization using MCP standards."
             videoSrc="/example_workflow.mov"
-            icon={<Lock size={32} className=""/>} 
+            imageUrl="https://f4-public.s3.eu-central-1.amazonaws.com/artifacts/edbb9f2b-0e4e-4238-9f42-fbb1892d2abc.jpg"
           />
           <FeatureSection
-            title="Easy MCP integration into whatever LLM you prefer."
-            description=""
+            title="Easy"
+            description="MCP integration into whatever LLM you prefer."
             videoSrc="/store_demo.mov"
-            icon={<Package size={32} className=""/>}
+            imageUrl="https://f4-public.s3.eu-central-1.amazonaws.com/artifacts/fdeebce8-9718-4502-9926-8a737940dd7c.jpg"
           />
           <FeatureSection
-            title="Fast generation using LLMs hosted on ASIC chips."
-            description=""
+            title="Fast"
+            description="Generation using LLMs hosted on ASIC chips."
             videoSrc="/speed_demo.mov"
-            icon={<Zap size={32} className=""/>}
+            imageUrl="https://f4-public.s3.eu-central-1.amazonaws.com/artifacts/e5ab005a-7ca7-4b3c-9362-953046a37604.jpg"
           />
           <FeatureSection
-            title="Customize the UI to match your brand and your mood."
-            description=""
+            title="Expressive"
+            description="Customize the UI to match your brand and your mood."
             videoSrc="/theme_demo.mov"
-            icon={<Palette size={32} className=""/>}
+            imageUrl="          https://f4-public.s3.eu-central-1.amazonaws.com/artifacts/5de5189a-4fce-489d-a8a0-4c3faf76a774.jpg"
+          />
+          <FeatureSection
+            title="Social"
+            description="Share f4rmers with a single link."
+            videoSrc="/theme_demo.mov"
+            imageUrl="https://f4-public.s3.eu-central-1.amazonaws.com/artifacts/20d19bca-5d01-46d8-9b68-66537c49d462.jpg"
+          />
+          <FeatureSection
+            title="Flexible"
+            description="Share f4rmers with a single link."
+            videoSrc="/theme_demo.mov"
+            imageUrl="https://f4-public.s3.eu-central-1.amazonaws.com/artifacts/e0a4091b-7c8f-4a9a-ae80-ce4987f8c877.jpg"
           />
         </div>
         <div className="">
