@@ -3,7 +3,7 @@ import { ThemeToggle } from "./components/ThemeToggle";
 import { FeatureSection } from "./components/FeatureSection";
 import { LazyGif } from "./components/LazyGif";
 import Link from "next/link";
-import { BotMessageSquare, FileCode2, FileImage, Lock, Package, Palette, Zap } from "lucide-react";
+import { BotMessageSquare, FileCode2, FileImage} from "lucide-react";
 
 export default function Home() {
   return (

@@ -1,7 +1,5 @@
 "use client";
 
-import { LazyVideo } from "./LazyVideo";
-
 interface FeatureSectionProps {
   title: string;
   description: string;
