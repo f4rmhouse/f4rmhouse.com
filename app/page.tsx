@@ -69,19 +69,19 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="col-span-1">
+        <div className="col-span-1 mt-[20vh]">
             <h1 className="text-center text-6xl mt-[40px] font-bold">Our features</h1>
           </div>
-        <div className="mt-[20vh] grid grid-cols-3 w-[70vw] mx-auto gap-0 rounded-md">
+        <div className="mt-5 grid grid-cols-3 w-[70vw] mx-auto gap-0 rounded-md">
           <FeatureSection
             title="Safe"
-            description="Authentication and authorization using MCP standards."
+            description="f4rmhouse keeps your data private and secure."
             videoSrc="/example_workflow.mov"
             imageUrl="https://f4-public.s3.eu-central-1.amazonaws.com/artifacts/edbb9f2b-0e4e-4238-9f42-fbb1892d2abc.jpg"
           />
           <FeatureSection
             title="Easy"
-            description="MCP integration into whatever LLM you prefer."
+            description="So simple you already know how to use it."
             videoSrc="/store_demo.mov"
             imageUrl="https://f4-public.s3.eu-central-1.amazonaws.com/artifacts/fdeebce8-9718-4502-9926-8a737940dd7c.jpg"
           />
@@ -99,13 +99,13 @@ export default function Home() {
           />
           <FeatureSection
             title="Social"
-            description="Share f4rmers with a single link."
+            description="Share f4rmers with a link so that friends can use them too."
             videoSrc="/theme_demo.mov"
             imageUrl="https://f4-public.s3.eu-central-1.amazonaws.com/artifacts/20d19bca-5d01-46d8-9b68-66537c49d462.jpg"
           />
           <FeatureSection
             title="Flexible"
-            description="Share f4rmers with a single link."
+            description="Choose any model you want and connect it with any tools."
             videoSrc="/theme_demo.mov"
             imageUrl="https://f4-public.s3.eu-central-1.amazonaws.com/artifacts/e0a4091b-7c8f-4a9a-ae80-ce4987f8c877.jpg"
           />
