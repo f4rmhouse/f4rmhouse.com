@@ -44,13 +44,13 @@ export default function Home() {
             <h1 className="text-center leading-18 text-[48px] md:text-[52px] lg:text-[72px] mb-4">
               f4rmhouse
             </h1>
-            <p className="text-center text-2xl text-neutral-400">the browser-native MCP client</p>
+            <p className="text-center text-2xl text-neutral-400">the browser-native MCP client.</p>
           </div>
         </div>
         <div className="max-w-[980px] mx-auto mt-5 flex justify-center gap-4">
           <a
             href="https://app.f4rmhouse.com"
-            className="p-2 font-bold hover:bg-yellow-400 transition-all text-black cursor-pointer rounded-md pl-5 pr-5 text-black bg-[#ffde59]"
+            className="p-2 font-bold hover:bg-blue-400 transition-all text-white cursor-pointer rounded-md pl-5 pr-5 text-foreground bg-[#0582ff]"
           >
             Get started — free
           </a>
@@ -69,7 +69,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="col-span-1 sm:mt-[20vh]">
+        <div className="col-span-1 mt-[20vh]">
             <h1 className="text-center text-6xl mt-[40px] font-bold">Our features</h1>
           </div>
         <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[70vw] mx-auto gap-0 rounded-md">
@@ -121,21 +121,21 @@ export default function Home() {
           <h1 className="text-center text-4xl sm:text-6xl mt-[200px] font-bold sm:w-[60vw] mx-auto">How people use f4rmhouse</h1>
           <div className="grid grid-cols-1 sm:grid-cols-3 w-[80vw] mx-auto gap-5 mt-20">
             <div>
-              <FileImage size={32} className="mb-5 text-yellow-500"/>
+              <FileImage size={32} className="mb-5 text-blue-400"/>
               <p className="text-2xl">Media generation</p>
               <p className="mt-5 text-xl">
                 Create a custom f4rmer with an image gen MCP to translate your sketches into photoreal visuals, render your favorite artist’s style on any subject, and iterate variations that sharpen your creative direction.
               </p>
             </div>
             <div>
-              <FileCode2 size={32} className="mb-5 text-yellow-500"/>
+              <FileCode2 size={32} className="mb-5 text-blue-400"/>
               <p className="text-2xl">Document generation</p>
               <p className="mt-5 text-xl">
                 Use Google Docs MCP to convert bullet points into polished reports, apply your house style to any draft, and spin instant variations that nail the right tone formal, playful, or investor grade every time.
               </p>
             </div>
             <div>
-              <BotMessageSquare size={32} className="mb-5 text-yellow-500"/>
+              <BotMessageSquare size={32} className="mb-5 text-blue-400"/>
               <p className="text-2xl">Share f4rmers</p>
               <p className="mt-5 text-xl">
               Share f4rmers with its custom tools, memory, and voice. Generate a single link. Anyone who clicks it receives an identical, ready-to-run clone in their own workspace. They&apos;ll inherit any guardrail you set, so your expertise spreads at the speed of a share.
