@@ -38,7 +38,7 @@ export default function Home() {
         </div>
       </nav>
 
-      <main className="pt-[5%]">
+      <main className="pt-[5%] sm:pt-[10%]">
         <div className="max-w-[980px] mx-auto">
           <div className="">
             <img height={100} width={100} className="rotate-[10deg] rounded-full mx-auto" src={"https://f4-public.s3.eu-central-1.amazonaws.com/public/assets/f4rmhouse-logo-official.png"}/>
@@ -70,7 +70,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="col-span-1 mt-[20vh]">
+        <div className="col-span-1 sm:mt-[20vh]">
             <h1 className="text-center text-6xl mt-[40px] font-bold">Our features</h1>
           </div>
         <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[70vw] mx-auto gap-0 rounded-md">
