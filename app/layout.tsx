@@ -11,7 +11,7 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: "f4rmhouse - the browser-native MCP client",
-  description: "Use MCP servers to multiply the power of any LLM you want!",
+  description: "The best MCP client that you can quickly use inside of your browser.",
 };
 
 export default function RootLayout({

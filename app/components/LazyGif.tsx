@@ -1,21 +1,22 @@
 "use client";
 
+import Image from "next/image";
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 
 interface LazyGifProps {
   src: string;
   alt: string;
   className?: string;
-  width?: string;
-  height?: string;
+  width?: number;
+  height?: number;
 }
 
 export function LazyGif({
   src,
   alt,
   className = "",
-  width = "100%",
-  height = "100%",
+  width = 800,
+  height = 600,
 }: LazyGifProps) {
   const [ref, isIntersecting] = useIntersectionObserver();
 
@@ -26,13 +27,15 @@ export function LazyGif({
           <div className="text-gray-400">Loading...</div>
         </div>
       ) : (
-        <img
+        <Image
           src={src}
           alt={alt}
           width={width}
           height={height}
-          className={className}
-          loading="lazy"
+          className={`w-full h-full object-cover ${className}`}
+          unoptimized={src.endsWith('.gif')}
+          priority={false}
+          sizes="100vw"
         />
       )}
     </div>

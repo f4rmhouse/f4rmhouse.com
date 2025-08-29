@@ -23,7 +23,7 @@ export function useIntersectionObserver(options = {}) {
     }
 
     return () => observer.disconnect();
-  }, []);
+  }, [options]);
 
   return [ref, isIntersecting] as const;
 }

@@ -62,7 +62,7 @@ export default function Home() {
               <div className="p-6">
               <LazyGif 
                 src="/fetch_remote_data.gif"
-                alt="Fetch remote data demo"
+                alt="AI workflow example using MCP servers and the f4rmhouse MCP client"
                 className="rounded-lg object-cover shadow-lg"
               />
               </div>
@@ -113,7 +113,7 @@ export default function Home() {
         <div className="">
           <h1 className="text-center text-4xl sm:text-6xl mt-[200px] font-bold sm:w-[60vw] mx-auto">We value your privacy and do not store any personal data or chat histories.</h1>
           <p className="text-center text-2xl text-neutral-400 mt-5">You can keep full control of your entire AI stack by running f4rmhouse on your own infrastructure.</p>
-          <img className="mx-auto mt-10" height={128} width={128} src="https://cdn-icons-png.flaticon.com/512/2111/2111540.png"/>
+          <Image className="mx-auto mt-10" height={128} width={128} src="https://cdn-icons-png.flaticon.com/512/2111/2111540.png" alt="Privacy icon"/>
         </div>
         <div className="mt-[10px] mb-[200px] grid grid-cols-1 w-[40vw] mx-auto gap-5">
         </div>

@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 interface FeatureSectionProps {
   title: string;
   description: string;
@@ -18,7 +20,13 @@ export function FeatureSection({
   return (
     <div className={`flex max-w-[1080px] m-5 sm:m-15 rounded-md rounded-lg`}>
       <div className="m-auto w-[100%]">
-        <img height={300} width={300} className="rounded-full m-auto" src={imageUrl || "https://f4-public.s3.eu-central-1.amazonaws.com/artifacts/20d19bca-5d01-46d8-9b68-66537c49d462.jpg"} />
+        <Image 
+          height={300} 
+          width={300} 
+          className="rounded-full m-auto" 
+          src={imageUrl || "https://f4-public.s3.eu-central-1.amazonaws.com/artifacts/20d19bca-5d01-46d8-9b68-66537c49d462.jpg"} 
+          alt={title}
+        />
         <h1 className="text-xl pt-5 w-[100%] text-center">{title}</h1>
         <p className="text-center">{description}</p>
       </div>
