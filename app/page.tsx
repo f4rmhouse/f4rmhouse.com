@@ -38,10 +38,9 @@ export default function Home() {
         </div>
       </nav>
 
-      <main className="pt-[10%] sm:pt-[5%]">
+      <main className="pt-[10%]">
         <div className="max-w-[980px] mx-auto">
           <div className="">
-            <img height={100} width={100} className="rotate-[10deg] rounded-full mx-auto" src={"https://f4-public.s3.eu-central-1.amazonaws.com/public/assets/f4rmhouse-logo-official.png"}/>
             <h1 className="text-center leading-18 text-[48px] md:text-[52px] lg:text-[72px] mb-4">
               f4rmhouse
             </h1>
