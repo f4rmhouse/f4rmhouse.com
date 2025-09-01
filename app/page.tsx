@@ -121,35 +121,41 @@ export default function Home() {
         <div className="w-full">
           <h1 className="text-center text-4xl sm:text-4xl mt-[200px] sm:w-[60vw] mx-auto">How people use f4rmhouse</h1>
           <div className="grid grid-cols-1 sm:grid-cols-3 w-[80vw] mx-auto gap-5 mt-20">
-            <div>
-              <FileImage size={32} className="mb-5 text-blue-400"/>
-              <p className="text-2xl">Media generation</p>
-              <p className="mt-5 text-xl">
-                Create a custom f4rmer with an image gen MCP to translate your sketches into photoreal visuals, render your favorite artist’s style on any subject, and iterate variations that sharpen your creative direction.
-              </p>
+            <div className="rounded-lg bg-[#f8cc51] p-5 text-black">
+              <Image className="rounded-t-lg w-full" width={400} height={300} src="https://f4-public.s3.eu-central-1.amazonaws.com/artifacts/6e63e4b6-89da-4dae-b132-a3f98c03d66e.jpg" alt="f4rmer making a picture"/>
+              <div className="bg-white rounded-lg p-5 shadow-lg">
+                <p className="text-2xl">Media generation</p>
+                <p className="mt-5 text-base">
+                  Create a custom f4rmer with an image gen MCP to translate your sketches into photoreal visuals, render your favorite artist’s style on any subject, and iterate variations that sharpen your creative direction.
+                </p>
+              </div>
             </div>
-            <div>
-              <FileCode2 size={32} className="mb-5 text-blue-400"/>
-              <p className="text-2xl">Document generation</p>
-              <p className="mt-5 text-xl">
-                Use Google Docs MCP to convert bullet points into polished reports, apply your house style to any draft, and spin instant variations that nail the right tone formal, playful, or investor grade every time.
-              </p>
+            <div className="rounded-lg bg-[#5f95b5] p-5 text-black">
+              <Image className="rounded-t-lg w-full" width={400} height={300} src="https://f4-public.s3.eu-central-1.amazonaws.com/artifacts/131ca05e-0849-491b-9d03-9009706bb6f1.jpg" alt="f4rmer making a picture"/>
+              <div className="bg-white rounded-lg p-5 shadow-lg">
+                <p className="text-2xl">Document generation</p>
+                <p className="mt-5 text-base">
+                  Use Google Docs MCP to convert bullet points into polished reports, apply your house style to any draft, and spin instant variations that nail the right tone formal, playful, or investor grade every time.
+                </p>
+              </div>
             </div>
-            <div>
-              <BotMessageSquare size={32} className="mb-5 text-blue-400"/>
-              <p className="text-2xl">Share f4rmers</p>
-              <p className="mt-5 text-xl">
-              Share f4rmers with its custom tools, memory, and voice. Generate a single link. Anyone who clicks it receives an identical, ready-to-run clone in their own workspace. They&apos;ll inherit any guardrail you set, so your expertise spreads at the speed of a share.
-              </p>
+            <div className="rounded-lg bg-[#897eda] p-5 text-black">
+              <Image className="rounded-t-lg w-full" width={400} height={300} src="https://f4-public.s3.eu-central-1.amazonaws.com/artifacts/cd56850f-52cb-4b27-aaa2-eb61d2679895.jpg" alt="f4rmer making a picture"/>
+              <div className="bg-white rounded-lg p-5 shadow-lg">
+                <p className="text-2xl">Sharing</p>
+                <p className="mt-5 text-base">
+                Share f4rmers with its custom tools, memory, and voice. Generate a single link. Anyone who clicks it receives an identical, ready-to-run clone in their own workspace. They&apos;ll inherit any guardrail you set, so your expertise spreads at the speed of a share.
+                </p>
+              </div>
             </div>
-            <div className="hidden sm:block">
-              <p className="italic mt-10 text-xl">Learn faster and deeper.</p>
+            <div className="hidden sm:block p-5">
+              <p className="italic text-base">Learn faster and deeper.</p>
             </div>
-            <div className="hidden sm:block">
-              <p className="italic mt-10 text-xl">Present with confidence.</p>
+            <div className="hidden sm:block p-5">
+              <p className="italic text-base">Present with confidence.</p>
             </div>
-            <div className="hidden sm:block">
-              <p className="italic mt-10 text-xl">Share intelligence.</p>
+            <div className="hidden sm:block p-5">
+              <p className="italic text-base">Share intelligence.</p>
             </div>
           </div>
           <div className="w-full">
