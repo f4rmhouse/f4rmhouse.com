@@ -10,7 +10,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "f4rmhouse - the browser-native MCP client",
+  title: "f4rmhouse | Mod your GPT",
   description: "The best MCP client that you can quickly use inside of your browser.",
 };
 
