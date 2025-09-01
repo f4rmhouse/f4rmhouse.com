@@ -3,10 +3,12 @@ import { ThemeToggle } from "./components/ThemeToggle";
 import { FeatureSection } from "./components/FeatureSection";
 import { LazyGif } from "./components/LazyGif";
 import Link from "next/link";
+import PostHogPageView  from "./PostHogPageView";
 
 export default function Home() {
   return (
     <div className="min-h-screen text-foreground bg-background">
+      <PostHogPageView />
       <nav className="fixed p-0 m-0 w-full backdrop-blur-xl bg-background/70 top-0 z-50 border-b border-[#86868b]/10">
         <div className="max-w-[980px] mx-auto px-5">
           <div className="flex justify-between items-center h-12">
