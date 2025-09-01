@@ -53,6 +53,7 @@ export default function Home() {
           >
             Get started — free
           </a>
+          <a href="https://discord.gg/E4jtCthE" className="flex p-2 font-bold hover:bg-neutral-700 transition-all bg-neutral-900 text-white cursor-pointer rounded-md pl-5 pr-5 text-foreground"><Image className="mr-2" height={24} width={24} src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-white-icon.png" alt={""} />or talk to a human</a>
         </div>
         <div>
           <div className="mt-15">
