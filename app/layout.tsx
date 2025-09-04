@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://f4rmhouse.com', // Replace with your actual domain
     siteName: 'f4rmhouse',
-    title: 'f4rmhouse | Mod your GPT',
+    title: 'f4rmhouse | The browser-native MCP client',
     description: 'f4rmhouse is great for customizing your AI and sharing it with friends.',
     images: [
       {
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@f4rmhouse', // Replace with your Twitter handle
     creator: '@f4rmhouse', // Replace with your Twitter handle
-    title: 'f4rmhouse | Mod your GPT',
-    description: 'The easiest way to mod your AI to do whatever you want.',
+    title: 'f4rmhouse | The browser-native MCP client',
+    description: 'f4rmhouse is great for customizing your AI and sharing it with friends.',
     images: ['/f4rmhouse-social.png'],
   },
   
