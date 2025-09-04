@@ -13,6 +13,39 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "f4rmhouse | Mod your GPT",
   description: "The best MCP client that you can quickly use inside of your browser.",
+  keywords: ["MCP", "GPT", "AI", "browser", "client", "f4rmhouse"],
+  authors: [{ name: "f4rmhouse" }],
+  creator: "f4rmhouse",
+  publisher: "f4rmhouse",
+  
+  // Open Graph meta tags for social media sharing
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://f4rmhouse.com', // Replace with your actual domain
+    siteName: 'f4rmhouse',
+    title: 'f4rmhouse | Mod your GPT',
+    description: 'f4rmhouse is great for modding your AI and sharing it with friends.',
+    images: [
+      {
+        url: '/f4rmhouse-social.png', // Using your largest existing image
+        width: 512,
+        height: 512,
+        alt: 'f4rmhouse - Mod your GPT',
+      },
+    ],
+  },
+  
+  // Twitter Card meta tags
+  twitter: {
+    card: 'summary_large_image',
+    site: '@f4rmhouse', // Replace with your Twitter handle
+    creator: '@f4rmhouse', // Replace with your Twitter handle
+    title: 'f4rmhouse | Mod your GPT',
+    description: 'The easiest way to mod your AI to do whatever you want.',
+    images: ['/f4rmhouse-social.png'],
+  },
+  
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
