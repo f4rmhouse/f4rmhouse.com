@@ -25,12 +25,12 @@ export const metadata: Metadata = {
     url: 'https://f4rmhouse.com', // Replace with your actual domain
     siteName: 'f4rmhouse',
     title: 'f4rmhouse | Mod your GPT',
-    description: 'f4rmhouse is great for modding your AI and sharing it with friends.',
+    description: 'f4rmhouse is great for customizing your AI and sharing it with friends.',
     images: [
       {
-        url: '/f4rmhouse-social.png', // Using your largest existing image
-        width: 512,
-        height: 512,
+        url: '/f4rmhouse-social.png',
+        width: 1200,
+        height: 630,
         alt: 'f4rmhouse - Mod your GPT',
       },
     ],
