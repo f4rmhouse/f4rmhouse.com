@@ -43,7 +43,7 @@ export default function Home() {
             <h1 className="text-center leading-18 text-[48px] md:text-[52px] lg:text-[72px] mb-4">
               f4rmhouse
             </h1>
-            <p className="text-center text-2xl text-neutral-400">Mod your LLM.</p>
+            <p className="text-center text-4xl text-neutral-400">Mod your LLM.</p>
           </div>
         </div>
         <div className="max-w-[980px] mx-auto mt-5 flex justify-center gap-4">
